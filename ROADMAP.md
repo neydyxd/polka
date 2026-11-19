@@ -91,18 +91,18 @@
 
 - [ ] Проект в Supabase (бесплатный тариф). Ключи в `.env.local`, файл в `.gitignore`, в репозитории `.env.example`
 - [ ] Таблица `user_books`:
-  | поле | тип |
-  |---|---|
-  | `id` | uuid, pk |
-  | `user_id` | uuid, ссылка на `auth.users` |
-  | `ol_key` | text (ключ книги из Open Library) |
-  | `title`, `author` | text |
-  | `cover_id` | int, nullable |
-  | `pages_total`, `pages_read` | int |
-  | `status` | enum: `want`, `reading`, `done` |
-  | `rating` | int 1–5, nullable |
-  | `started_at`, `finished_at`, `created_at` | timestamptz |
-  Уникальность пары `user_id + ol_key`: одна книга не может попасть на полку дважды
+  | поле                                                                              | тип                               |
+  | --------------------------------------------------------------------------------- | --------------------------------- |
+  | `id`                                                                              | uuid, pk                          |
+  | `user_id`                                                                         | uuid, ссылка на `auth.users`      |
+  | `ol_key`                                                                          | text (ключ книги из Open Library) |
+  | `title`, `author`                                                                 | text                              |
+  | `cover_id`                                                                        | int, nullable                     |
+  | `pages_total`, `pages_read`                                                       | int                               |
+  | `status`                                                                          | enum: `want`, `reading`, `done`   |
+  | `rating`                                                                          | int 1–5, nullable                 |
+  | `started_at`, `finished_at`, `created_at`                                         | timestamptz                       |
+  | Уникальность пары `user_id + ol_key`: одна книга не может попасть на полку дважды |
 - [ ] **RLS включён** и политики: пользователь видит и меняет только свои строки (`user_id = auth.uid()`). Без этого любой может прочитать чужие полки
 - [ ] Типы из базы: `supabase gen types typescript`
 - [ ] Регистрация и вход по email и паролю, экран как в макете, ошибки под полями

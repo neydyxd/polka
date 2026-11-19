@@ -9,6 +9,9 @@
     "skipLibCheck": true,
     "noUncheckedIndexedAccess": true,
     "strict": true,
+    "paths": {
+      "@/*": ["./src/*"]
+    },
 
     /* Bundler mode */
     "moduleResolution": "bundler",
