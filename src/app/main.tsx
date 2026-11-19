@@ -6,6 +6,6 @@ import Button from '@/shared/components/Button/Button'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <Button onClick={() => { }}>Hello</Button>
+    <Button onClick={() => {}}>Hello</Button>
   </StrictMode>
 )
