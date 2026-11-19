@@ -1,0 +1,31 @@
+:root {
+  --paper: #f4efe4;
+  --paper-2: #eae3d4;
+  --card: #fbf8f1;
+  --ink: #1d1b17;
+  --ink-2: #5c574d;
+  --ink-3: #9a9384;
+  --line: #e2dacb;
+  --green: #1f4d3a;
+  --green-hover: #173c2d;
+  --green-soft: #dce7df;
+  --stamp: #c2462b;
+  --stamp-soft: #f5ddd3;
+  --mustard: #d9a93a;
+  --font-serif: 'Literata', Georgia, serif;
+  --font-sans: 'Golos Text', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', ui-monospace, monospace;
+  --s-1: 4px;
+  --s-2: 8px;
+  --s-3: 12px;
+  --s-4: 16px;
+  --s-5: 24px;
+  --s-6: 32px;
+  --s-7: 40px;
+  --s-8: 56px;
+  --r-1: 4px;
+  --r-2: 8px;
+  --r-pill: 999px;
+  --shadow-card:
+    0 1px 0 rgba(29, 27, 23, 0.04), 0 6px 20px -12px rgba(29, 27, 23, 0.25);
+}
