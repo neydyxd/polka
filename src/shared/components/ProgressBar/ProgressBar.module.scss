@@ -1,0 +1,16 @@
+.container {
+  height: 6px;
+  background: var(--line);
+  border-radius: var(--r-pill);
+  overflow: hidden;
+}
+
+.line {
+  background: var(--stamp);
+  height: 100%;
+  border-radius: var(--r-pill);
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: width 0.3s;
+  }
+}
