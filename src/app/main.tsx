@@ -4,9 +4,7 @@ import './index.css'
 import '@/shared/styles/tokens.css'
 import Input from '@/shared/components/Input/Input'
 import StatusPill from '@/shared/components/StatusPill/StatusPill'
-import type { ShelfStatus } from '@/shared/types/shelf'
-
-const SHELF_STATUSES: ShelfStatus[] = ['done', 'reading', 'want']
+import { SHELF_STATUSES } from '@/shared/types/shelf'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
