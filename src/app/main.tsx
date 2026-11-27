@@ -3,6 +3,8 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import '@/shared/styles/tokens.css'
 import Input from '@/shared/components/Input/Input'
+import StatusPill from '@/shared/components/StatusPill/StatusPill'
+import { SHELF_STATUSES } from '@/shared/types/shelf'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
@@ -18,6 +20,9 @@ createRoot(document.getElementById('root')!).render(
         name="email"
         autoComplete="email"
       />
+      {SHELF_STATUSES.map((s) => (
+        <StatusPill key={s} status={s} />
+      ))}
     </div>
   </StrictMode>
 )
