@@ -1,0 +1,43 @@
+.group {
+  display: inline-flex;
+  gap: 2px;
+  padding: 3px;
+  background: var(--paper-2);
+  border-radius: var(--r-1);
+}
+
+.stretch {
+  display: flex;
+  width: 100%;
+
+  .option {
+    flex: 1;
+  }
+}
+
+.option {
+  padding: 6px 12px;
+  background: none;
+  border: none;
+  border-radius: 3px;
+  color: var(--ink-2);
+  font: 13px/18px var(--font-sans);
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--ink);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 1px;
+  }
+}
+
+.active {
+  background: var(--card);
+  color: var(--ink);
+  font-weight: 500;
+  box-shadow: 0 1px 2px rgb(29 27 23 / 12%);
+}

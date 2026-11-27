@@ -1,0 +1,13 @@
+.stamp {
+  display: inline-block;
+  align-self: flex-start;
+  padding: 4px 7px;
+  border: 1.5px solid currentColor;
+  border-radius: 3px;
+  color: var(--stamp);
+  font: 500 11px/1 var(--font-mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  transform: rotate(-2deg);
+}

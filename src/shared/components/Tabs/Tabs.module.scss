@@ -1,0 +1,45 @@
+.list {
+  display: flex;
+  gap: 28px;
+  border-bottom: 1px solid var(--line);
+  // на узких экранах вкладки не переносятся, а прокручиваются
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tab {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 4px;
+  padding: 0 0 12px;
+  margin-bottom: -1px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  color: var(--ink-2);
+  font: 15px/22px var(--font-sans);
+  white-space: nowrap;
+  cursor: pointer;
+
+  &:hover {
+    color: var(--ink);
+  }
+
+  &:focus-visible {
+    outline: 2px solid var(--green);
+    outline-offset: 2px;
+    border-radius: var(--r-1);
+  }
+}
+
+.active {
+  color: var(--ink);
+  font-weight: 500;
+  border-bottom-color: var(--ink);
+}
+
+.count {
+  font: 11px/16px var(--font-mono);
+  color: var(--ink-3);
+}
